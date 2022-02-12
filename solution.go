@@ -6,6 +6,6 @@ import (
 )
 
 func GetMessage() string {
-	msg := fmt.Sprintf("Hello :map:")
+	msg := fmt.Sprintf("Hello :world-map:")
 	return emoji.Sprint(msg)
 }
