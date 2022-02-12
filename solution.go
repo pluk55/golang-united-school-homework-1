@@ -1,15 +1,11 @@
-package main
+package solutions
 
 import (
 	"fmt"
 	"github.com/kyokomi/emoji/v2"
 )
 
-func GetMessage(emj string) string {
-	msg := fmt.Sprintf("Hello :%s:", emj)
+func GetMessage() string {
+	msg := fmt.Sprintf("Hello :map:")
 	return emoji.Sprint(msg)
-}
-
-func main() {
-	fmt.Println(GetMessage("beer"))
 }

@@ -1,4 +1,4 @@
-package main
+package solutions
 
 import (
 	"fmt"
@@ -9,19 +9,9 @@ import (
 // TestHelloName calls greetings.Hello with a name, checking
 // for a valid return value.
 func TestHelloName(t *testing.T) {
-	emg := "beer"
-	msg := GetMessage(emg)
+	msg := GetMessage()
 
-	if strings.Contains(msg, emg) {
+	if strings.Contains(msg, "Hello") {
 		fmt.Println("Passed")
-	}
-}
-
-func TestHelloEmpty(t *testing.T) {
-	emg := "stamm"
-	msg := GetMessage(emg)
-
-	if strings.Contains(msg, emg) {
-		t.Fatal()
 	}
 }
