@@ -6,8 +6,6 @@ import (
 )
 
 func GetMessage() string {
-	fmt.Println("Hello World Emoji!")
-
 	emoji.Sprint(":beer: Beer!!!")
 	return emoji.Sprint("Hello :beer:")
 }
