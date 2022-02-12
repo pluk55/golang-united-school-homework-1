@@ -5,11 +5,11 @@ import (
 	"github.com/kyokomi/emoji/v2"
 )
 
-func GetMessage() string {
-	emoji.Sprint(":beer: Beer!!!")
-	return emoji.Sprint("Hello :beer:")
+func GetMessage(emj string) string {
+	msg := fmt.Sprintf("Hello :%s:", emj)
+	return emoji.Sprint(msg)
 }
 
 func main() {
-	fmt.Println(GetMessage())
+	fmt.Println(GetMessage("beer"))
 }
