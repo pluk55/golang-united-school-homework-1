@@ -14,5 +14,4 @@ func GetMessage() string {
 
 func main() {
 	fmt.Println(GetMessage())
-
 }
